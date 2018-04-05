@@ -8,11 +8,11 @@ public class Cell implements Comparable<Cell> {
 		this.value = value;
 	}
 
-	public void editKey(String replacement) {
+	public void setKey(String replacement) {
 		key = replacement;
 	}
 
-	public void editValue(String replacement) {
+	public void setValue(String replacement) {
 		value = replacement;
 	}
 

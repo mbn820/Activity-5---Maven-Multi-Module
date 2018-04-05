@@ -41,8 +41,8 @@ public class TableOperations extends RandomTable{
 		Cell targetCell = super.getCell(rowIndex, colIndex);
 		String oldKey = targetCell.getKey();
 
-		targetCell.editKey(newKey);
-		targetCell.editValue(newValue);
+		targetCell.setKey(newKey);
+		targetCell.setValue(newValue);
 		super.cellRecords.remove(oldKey);
 		super.cellRecords.put(newKey, newValue);
 
